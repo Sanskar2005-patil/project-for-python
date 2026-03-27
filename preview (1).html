@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Password Generated</title>
+
+<style>
+
+body{
+font-family: Arial;
+background: linear-gradient(120deg,#4facfe,#00f2fe);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+text-align:center;
+}
+
+.password{
+background:#f4f4f4;
+padding:10px;
+margin:20px 0;
+border-radius:5px;
+font-weight:bold;
+}
+
+button{
+background:#4facfe;
+color:white;
+border:none;
+padding:10px;
+border-radius:5px;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Your Password 🔐</h2>
+
+<div class="password">
+{{ password }}
+</div>
+
+<a href="/">
+<button>Generate Again</button>
+</a>
+
+</div>
+
+</body>
+</html>
