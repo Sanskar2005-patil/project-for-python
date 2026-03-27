@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Password Generator</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background: linear-gradient(120deg,#4facfe,#00f2fe);
+height: 100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+width:350px;
+text-align:center;
+}
+
+h2{
+margin-bottom:20px;
+}
+
+input[type="number"]{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+.options{
+text-align:left;
+margin:15px 0;
+}
+
+button{
+background:#4facfe;
+color:white;
+border:none;
+padding:12px;
+width:100%;
+border-radius:5px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#00c6ff;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Password Generator 🔐</h2>
+
+<form action="/generate" method="post">
+
+<label>Password Length</label>
+<input type="number" name="length" required>
+
+<div class="options">
+<input type="checkbox" name="upper"> Uppercase Letters<br>
+<input type="checkbox" name="lower"> Lowercase Letters<br>
+<input type="checkbox" name="digits"> Numbers<br>
+<input type="checkbox" name="symbols"> Symbols<br>
+</div>
+
+<button type="submit">Generate Password</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
